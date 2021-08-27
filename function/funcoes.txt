@@ -1,0 +1,102 @@
+<nav>
+    <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="index.php?pagina=quem-somos.php">Quem Somos</a></li>
+        <li><a href="index.php?pagina=contatos.php">Contatos</a></li>
+        <li><a href="index.php?pagina=localizacao.php">Localização</a></li>
+    </ul>
+</nav>
+
+
+
+
+
+
+<?php
+    if (isset($_GET["pagina"]) && !empty($_GET["pagina"])) {
+        $pagina = $_GET["pagina"];
+        include ($pagina);
+    } else {
+         //include ("home.php");
+         echo "Página Principal";
+    }
+?>
+
+
+
+
+
+
+<?php
+
+return $dado = array(
+    array('id' => 45, 'nome' => 'Rafael', 'age' => 28),
+    array('id' => 65, 'nome' => 'Ricardo', 'age' => 38),
+    array('id' => 25, 'nome' => 'Ronie', 'age' => 48),
+    array('id' => 15, 'nome' => 'Belo', 'age' => 58),
+);
+
+
+
+
+Parceiros
+
+<?php
+
+include ("dados.php");
+
+foreach ($dado as $value) {
+?>
+    <p>
+    <a href="index.php?pagina=parceiro.php&id=<?=$value["id"];?>"><?=$value[
+	"nome"];?></a>
+    </p>
+<?php
+}
+
+
+
+
+
+
+Perfil do Parceiro
+
+<?php
+
+include ("dados.php");
+
+foreach ($dado as $value) {
+?>
+    <p>
+    <a href="index.php?pagina=parceiro.php&id=<?=$value["id"];?>"><?=$value[
+	"nome"];?></a>
+    </p>
+<?php
+}
+
+
+
+
+
+
+
+Erotides Caetano Júnior
+RA: 1224213-5
+Curso: Superior de Tecnologia em Sistemas de Internet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
