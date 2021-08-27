@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Mapa I</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Olá !!</h1>
+        <p>Marcação e estilização</p>
+</header>
+
+    <section>
+        <header><h2>Últimos</h2>
+        </header>
+        
+        <article>
+            <header>
+               <h3>Seletores</h3>
+            </header>
+            <p>
+            Prágrafo
+            </p>
+            <a href="#" class="btn"> Mais >>></a>
+        </article>
+    </section>
+
+    <article>
+            <header>
+               <h3>Novo Seletores</h3>
+            </header>
+            <p>
+            Prágrafo
+            </p>
+            <a href="#" class="btn"> Mais >>></a>
+        </article>
+</body>
